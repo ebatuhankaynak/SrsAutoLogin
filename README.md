@@ -4,8 +4,7 @@ SrsAutoLogin is created to get rid of the relatively tedious login process of Bi
 Since the verification code is automatically fetched from mail inbox, your verification code should be sent to your mail address,
 not to your cell phone.
 
-<strong>Caution!</strong> Remember Cridentials button saves your login/pass locally to a text file after an encription. Changing the
-encription code in srs_crypt.py should be sufficient, but I am not a rapper so beware. 
+<strong>Caution!</strong> Since this program is automating something that is used for security, pelase keep in mind that it has the risk of account theft. Remember Cridentials button saves your login/pass locally to a text file after an encription. Changing the encription code in srs_crypt.py should be sufficient, but I am not a rapper so beware.
 
 <h3>To Do:</h3>
 <ul>
