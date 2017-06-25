@@ -1,0 +1,84 @@
+<Login>:
+    BoxLayout
+        id: login_layout
+        orientation: 'vertical'
+        padding: [10,30,10,30]
+        spacing: 5
+
+        Label:
+            text: 'Bilkent Srs'
+            font_size: 32
+
+        BoxLayout:
+            orientation: 'vertical'
+
+            Label:
+                text: 'Bilkent ID'
+                font_size: 18
+                halign: 'left'
+                text_size: root.width-20, 20
+
+            TextInput:
+                id: username
+                multiline:False
+                font_size: 16
+
+        BoxLayout:
+            orientation: 'vertical'
+            Label:
+                text: 'Password: '
+                halign: 'left'
+                font_size: 18
+                text_size: root.width-20, 20
+
+            TextInput:
+                id: password
+                multiline:False
+                password:True
+                font_size: 16
+
+        BoxLayout:
+            orientation: 'vertical'
+
+            Label:
+                text: 'Mail: '
+                font_size: 18
+                halign: 'left'
+                text_size: root.width-20, 20
+
+            TextInput:
+                id: mail_address
+                multiline:False
+                font_size: 16
+
+        BoxLayout:
+            orientation: 'vertical'
+            Label:
+                text: 'Mail Password: '
+                halign: 'left'
+                font_size: 18
+                text_size: root.width-20, 20
+
+            TextInput:
+                id: mail_pass
+                multiline:False
+                password:True
+                font_size: 16
+        BoxLayout:
+            orientation: 'vertical'
+
+            Label:
+                text: 'Remember Credentials'
+                font_size: 18
+                halign: 'left'
+                text_size: root.width-20, 20
+
+            CheckBox:
+                id: checkbox
+                #active : root.state
+
+        Button:
+            text: 'Login'
+            font_size: 24
+
+            on_press: root.login(username.text, password.text, mail_address.text, mail_pass.text)
